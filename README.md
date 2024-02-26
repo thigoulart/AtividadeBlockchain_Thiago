@@ -1,17 +1,17 @@
 ## Implementação de DHT em C++ com Casos de Teste - Thiago Goulart
 <a href="https://replit.com/join/aqqhynyrsc-thigoulart">Link do Replit</a>
 
-### Caso de Teste 1: Inserir um Item na Tabela Hash
+### Caso de Teste 1: Inserir Itens na Tabela Hash
 <figure>
   <figcaption style="text-align: center;">Figura 1 - Caso de teste 1</figcaption>
-  <img src="../assets/caso1" style="display: block; margin: auto;" alt="Caso de teste 1"></img>
+  <img src="./assets/caso1.jpg" style="display: block; margin: auto;" alt="Caso de teste 1"></img>
   <figcaption style="text-align: center;">Fonte: Autoria Própria.</figcaption>
 </figure>
 
-- **Descrição**: Testa a capacidade de inserir um novo item na tabela hash.
-- **Pré-Condição**: Enviar um inteiro como "ID" do produto e seu nome correspondente para ser inserido na tabela hash.
+- **Descrição**: Testa a capacidade de inserir itens na tabela hash.
+- **Pré-Condição**: Enviar inteiros como "ID" do produto e seu nome correspondente para ser inserido na tabela hash.
 - **Etapas do Teste**:
-    1. Chamar a função de inserção de item na tabela hash, fornecendo um ID e um nome de produto.
+    1. Chamar a função de inserção de item na tabela hash, fornecendo ID's e nomes de produtos.
     2. Obter o índice resultante da função de hash para o ID fornecido.
     3. Verificar se o item foi inserido corretamente na posição indicada pelo índice resultante da função de hash.
 - **Pós-Condição**: O item deve ser inserido com sucesso na tabela hash na posição determinada pela função de hash.
@@ -19,12 +19,12 @@
 ### Caso de Teste 2: Deletar um Item da Tabela Hash
 <figure>
   <figcaption style="text-align: center;">Figura 2 - Caso de teste 2</figcaption>
-  <img src="../assets/caso1" style="display: block; margin: auto;" alt="Caso de teste 2"></img>
+  <img src="./assets/caso2.jpg" style="display: block; margin: auto;" alt="Caso de teste 2"></img>
   <figcaption style="text-align: center;">Fonte: Autoria Própria.</figcaption>
 </figure>
 
 - **Descrição**: Testa a capacidade de excluir um item da tabela hash com base em sua chave (ID).
-- **Pré-Condição**: O item correspondente ao ID a ser deletado deve existir na tabela hash.
+- **Pré-Condição**: O item correspondente ao ID a ser deletado deve existir na tabela hash, no caso, o item 12704 - Cadeira.
 - **Etapas do Teste**:
     1. Chamar a função de exclusão do item da tabela hash, fornecendo o ID do item a ser removido.
     2. Verificar se o item e seu ID foram removidos corretamente da tabela hash.
@@ -33,27 +33,27 @@
 ### Caso de Teste 3: Tratamento de Colisões ao Inserir um Item
 <figure>
   <figcaption style="text-align: center;">Figura 3 - Caso de teste 3</figcaption>
-  <img src="../assets/caso1" style="display: block; margin: auto;" alt="Caso de teste 3"></img>
+  <img src="./assets/caso3.jpg" style="display: block; margin: auto;" alt="Caso de teste 3"></img>
   <figcaption style="text-align: center;">Fonte: Autoria Própria.</figcaption>
 </figure>
 
-- **Descrição**: Testa o tratamento de colisões ao inserir um novo item na tabela hash.
+- **Descrição**: Testa o tratamento de colisões ao inserir um novo item na tabela hash, no caso, o item 1234 - Caneta.
 - **Pré-Condição**: Enviar um inteiro como "ID" do produto e seu nome correspondente para ser inserido na tabela hash. Também, garantir que já exista um produto vinculado a um "ID" na mesma posição da tabela hash.
 - **Etapas do Teste**:
     1. Chamar a função de inserção de item na tabela hash, inserindo um novo item que resulte em colisão.
     2. Obter o índice resultante da função de hash para o novo ID fornecido.
     3. Verificar se o novo item foi inserido corretamente na próxima posição disponível na tabela hash, após resolver a colisão.
-- **Pós-Condição**: O novo item deve ser inserido com sucesso na próxima posição vazia na tabela hash, evitando a colisão com o item já existente.
+- **Pós-Condição**: O novo item deve ser inserido com sucesso na próxima posição vazia na tabela hash, evitando a colisão com o item já existente, que, no caso, é a posição 5, como ocorreu.
 
 ### Caso de Teste 4: Buscar um Item com Base no ID
 <figure>
   <figcaption style="text-align: center;">Figura 4 - Caso de teste 4</figcaption>
-  <img src="../assets/caso1" style="display: block; margin: auto;" alt="Caso de teste 4"></img>
+  <img src="./assets/caso4.jpg" style="display: block; margin: auto;" alt="Caso de teste 4"></img>
   <figcaption style="text-align: center;">Fonte: Autoria Própria.</figcaption>
 </figure>
 
 - **Descrição**: Testa a capacidade de buscar um item na tabela hash com base no seu ID.
-- **Pré-Condição**: Inserir um "ID" com um produto correspondente já existente na tabela hash.
+- **Pré-Condição**: Inserir um "ID" com um produto correspondente já existente na tabela hash, que, no caso, o item 12704 - Cadeira.
 - **Etapas do Teste**:
     1. Chamar a função de busca do item na tabela hash utilizando o ID inserido previamente.
     2. Verificar se o produto com o ID inserido inicialmente é retornado corretamente.
@@ -62,7 +62,7 @@
 ### Caso de Teste 5: Inserir um Item e Buscar Pelo ID
 <figure>
   <figcaption style="text-align: center;">Figura 5 - Caso de teste 5</figcaption>
-  <img src="../assets/caso1" style="display: block; margin: auto;" alt="Caso de teste 5"></img>
+  <img src="./assets/caso5.jpg" style="display: block; margin: auto;" alt="Caso de teste 5"></img>
   <figcaption style="text-align: center;">Fonte: Autoria Própria.</figcaption>
 </figure>
 
